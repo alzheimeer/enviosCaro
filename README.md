@@ -1,2 +1,3 @@
-# enviosCaro
-API delivery
+* INICIAR EL PROYECTO
+
+npm run dev

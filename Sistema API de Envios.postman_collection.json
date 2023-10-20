@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "e2a2c69f-7d5c-4295-9774-ad2d791f2870",
+		"name": "Sistema API de Envios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10068721"
+	},
+	"item": [
+		{
+			"name": "ITEM",
+			"item": [
+				{
+					"name": "Buscar Todos Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/item",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar un Item con un ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/item/65330494de1c5744c310bb9c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"item",
+								"65330494de1c5744c310bb9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un Item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"perro caliente\",\r\n    \"price\":15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/delivery/item",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un Item",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"pepino\",\r\n    \"price\":4000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/delivery/item/653303e903567e4e6f1993a4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"item",
+								"653303e903567e4e6f1993a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar un Item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/item/65330494de1c5744c310bb9c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"item",
+								"65330494de1c5744c310bb9c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MENU",
+			"item": [
+				{
+					"name": "Buscar Todos Menus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/menu",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar un Menu con un ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/menu/65330494de1c5744c310bb9c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"menu",
+								"65330494de1c5744c310bb9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un Menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Menu Comida Rapida\",\r\n  \"description\": \"Este es un menú de prueba\",\r\n  \"items\": [\r\n    \"653303e903567e4e6f1993a4\",\r\n    \"65330852d7c8a45acbf02ca4\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/delivery/menu",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un Menu",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Menu Comida Rapida\",\r\n  \"description\": \"Este es un menú de prueba\",\r\n  \"items\": [\r\n    \"653303e903567e4e6f1993a4\",\r\n    \"65330852d7c8a45acbf02ca4\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/delivery/menu/653303e903567e4e6f1993a4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"menu",
+								"653303e903567e4e6f1993a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar un Menu",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/menu/65330494de1c5744c310bb9c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"menu",
+								"65330494de1c5744c310bb9c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ORDER",
+			"item": [
+				{
+					"name": "Buscar Todas las Ordenes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar una orden por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/order/65330494de1c5744c310bb9c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"order",
+								"65330494de1c5744c310bb9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear una orden",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"items\": [\r\n    \"63a057b006d8e1179746850d\",\r\n    \"63a057b006d8e1179746850e\"\r\n  ],\r\n  \"total\": 15000,\r\n  \"deliveryAddress\": \"Calle 123, Bogotá, Colombia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/delivery/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar una orden",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"items\": [\r\n    \"63a057b006d8e1179746850d\",\r\n    \"63a057b006d8e1179746850e\"\r\n  ],\r\n  \"total\": 15000,\r\n  \"deliveryAddress\": \"Calle 123, Bogotá, Colombia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/delivery/order/653303e903567e4e6f1993a4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"order",
+								"653303e903567e4e6f1993a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar una orden",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/delivery/order/65330494de1c5744c310bb9c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delivery",
+								"order",
+								"65330494de1c5744c310bb9c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
